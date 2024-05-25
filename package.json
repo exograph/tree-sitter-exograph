@@ -1,0 +1,48 @@
+{
+  "name": "tree-sitter-grammar",
+  "version": "0.0.1",
+  "description": "Exograph grammar for tree-sitter",
+  "repository": "github:exograph/tree-sitter-grammar",
+  "main": "bindings/node",
+  "types": "bindings/node",
+  "scripts": {
+    "install": "node-gyp-build",
+    "prebuildify": "prebuildify --napi --strip"
+  },
+  "keywords": [
+    "tree-sitter",
+    "exograph",
+    "grammar"
+  ],
+  "files": [
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "bindings/node/*",
+    "queries/*",
+    "src/**"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "node-addon-api": "^7.1.0",
+    "node-gyp-build": "^4.8.0"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "tree_sitter": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.22.6",
+    "prebuildify": "^6.0.0"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.exograph",
+      "injection-regex": "^exograph$"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "name": "tree-sitter-grammar",
+  "name": "tree-sitter-exograph",
   "version": "0.0.1",
   "description": "Exograph grammar for tree-sitter",
   "repository": "github:exograph/tree-sitter-grammar",

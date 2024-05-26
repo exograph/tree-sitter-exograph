@@ -41,8 +41,11 @@
   },
   "tree-sitter": [
     {
-      "scope": "source.exograph",
-      "injection-regex": "^exograph$"
+      "scope": "source.exo",
+      "file-types": [
+        "ts"
+      ],
+      "injection-regex": "^exo$"
     }
   ]
 }
